@@ -9,14 +9,15 @@ The CashFlow Expense Manager App is a web application developed to help users ma
 
 ## Features
 
-- **Expense List:** Displays a list of all expenses.
-- **Expense Detail:** Shows detailed information about a specific expense.
+- **Home:** Displays a list of all expenses.
+- **Details:** Shows detailed information about a specific expense.
 - **Create Expense:** Allows users to add a new expense.
+- **Edit Expense:** Allows users to edit the current expense
 
 ## Technologies Used
 
-- **Backend:** ASP.NET Core, Repository Pattern
-- **Frontend:** Angular
+- **Backend:** ASP.NET Core, Repository Pattern, Entity Frameworks
+- **Frontend:** Angular, TypeScript, Tailwind
 
 ## Setup
 
