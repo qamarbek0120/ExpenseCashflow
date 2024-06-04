@@ -1,0 +1,36 @@
+<div class="flex justify-center items-center mt-8 p-8 ">
+    <form action="" class="shadow border w-4/12 p-4 mx-auto" id="myform" >
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Description</mat-label>
+                <input type="text" name="description" matInput [(ngModel)]="expenseToCreate.description">
+            </mat-form-field>
+
+
+        </div>
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Amount</mat-label>
+                <input matInput type="number" name="amount" [(ngModel)]="expenseToCreate.amount ">
+            </mat-form-field>
+        </div>
+
+
+        <div class="flex">
+            <mat-form-field class="w-full">
+                <mat-label>Choose Category</mat-label>
+                <mat-select name = "Category" [(ngModel)]="selectedCategoryId">
+                    @for (item of categories; track item) {
+                        <mat-option [value]="item.id">{{item.categoryName}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+
+        <div class="flex">
+            <button mat-raised-button (click)="onCreateBtn()" color="primary">Create</button>
+        </div>
+    </form>
+</div>
+

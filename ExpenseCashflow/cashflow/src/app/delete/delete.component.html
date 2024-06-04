@@ -1,0 +1,22 @@
+<div class="flex mt-8 justify-center">
+    <mat-card class="shadow w-4/12">
+        <mat-card-content>
+            <div class="p-8">
+                <h2 class="text-3xl font-bold mb-4">{{ deleteExpense.description }}</h2>
+                <p class="text-gray-700">{{ deleteExpense.amount }}</p>
+                <div class="mt-4">
+                    <span class="text-gray-600">Category:</span>
+                    <mat-chip class="ml-2">{{ deleteExpense.category.categoryName }}</mat-chip>
+                </div>
+            </div>
+            <div class="flex justify-around">
+                <div>
+                    <button mat-raised-button color="primary" (click)="onHomeButtonClick()">Cancel (Home)</button>
+                </div>
+                <div>
+                    <button mat-raised-button color="warn" (click)="onDeleteButtonClick(deleteExpense.id)" >Delete</button>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
